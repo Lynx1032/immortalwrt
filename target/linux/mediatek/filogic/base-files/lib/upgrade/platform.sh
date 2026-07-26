@@ -169,6 +169,7 @@ platform_do_upgrade() {
 	livinet,zr-3020-ubootmod|\
 	mediatek,mt7981-rfb|\
 	mediatek,mt7988a-rfb|\
+	mercusys,mr85x-ubi|\
 	mercusys,mr90x-v1-ubi|\
 	netis,eap930-v1|\
 	netis,n6-v2|\
@@ -423,6 +424,7 @@ platform_check_image() {
 	livinet,zr-3020-ubootmod|\
 	mediatek,mt7981-rfb|\
 	mediatek,mt7988a-rfb|\
+	mercusys,mr85x-ubi|\
 	mercusys,mr90x-v1-ubi|\
 	nokia,ea0326gmp|\
 	netis,eap930-v1|\
