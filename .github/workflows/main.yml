@@ -64,7 +64,16 @@ jobs:
       - name: Thu gom file Firmware thành phẩm
         run: |
           mkdir -p dist
-          find bin/targets/ -type f \( -name "*.bin" -o -name "*.img*" -o -name "*.itb" -o -name "*.fip" -o -name "sha256sums" \) -exec cp {} dist/ \;
+          # Quét tất cả file image, sysupgrade, bootloader, fip, u-boot, bin
+          find bin/targets/ -type f \( \
+            -name "*.bin" -o \
+            -name "*.img*" -o \
+            -name "*.itb" -o \
+            -name "*fip*" -o \
+            -name "*bl2*" -o \
+            -name "*u-boot*" -o \
+            -name "sha256sums" \
+          \) -exec cp {} dist/ \;
 
       - name: Tải Firmware lên Artifacts
         uses: actions/upload-artifact@v4
