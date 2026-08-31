@@ -65,8 +65,6 @@ jobs:
 
           make tools/install -j$(nproc) V=s
           make toolchain/install -j$(nproc) V=s
-          make package/install -j$(nproc) V=s
-          make target/install -j$(nproc) V=s
 
           make package/boot/uboot-mediatek/compile -j$(nproc) V=s
 
