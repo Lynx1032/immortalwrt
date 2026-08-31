@@ -1543,6 +1543,7 @@ UBOOT_TARGETS := \
 	mt7981_qihoo_360t7 \
 	mt7981_qihoo_360t7-ubi \
 	mt7981_snr_snr-cpe-ax2 \
+  mt7981_viettel_nr3053 \
 	mt7981_teralink_tl3020-256mb \
 	mt7981_wavlink_wl-wnt100x3 \
 	mt7981_xiaomi_mi-router-ax3000t \
