@@ -61,7 +61,7 @@ jobs:
           ./scripts/feeds install -a
           cp viettel.config .config
           make defconfig
-          make download -j8 V=s
+          make download V=s
 
           make package/boot/uboot-mediatek/compile -j$(nproc) V=s
 
