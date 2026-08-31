@@ -42,7 +42,7 @@ jobs:
           path: |
             staging_dir/host
             staging_dir/toolchain-*
-          key: immortalwrt-toolchain-amd64-${{ hashFiles('feeds.conf.default') }}-v2
+          key: immortalwrt-toolchain-amd64-${{ hashFiles('feeds.conf.default') }}-v3
           restore-keys: |
             immortalwrt-toolchain-amd64-
 
@@ -51,7 +51,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: dl
-          key: immortalwrt-dl-amd64-${{ hashFiles('feeds.conf.default') }}-v2-${{ github.run_id }}
+          key: immortalwrt-dl-amd64-${{ hashFiles('feeds.conf.default') }}-v3-${{ github.run_id }}
           restore-keys: |
             immortalwrt-dl-amd64-
 
@@ -102,11 +102,11 @@ jobs:
           path: |
             staging_dir/host
             staging_dir/toolchain-*
-          key: immortalwrt-toolchain-amd64-${{ hashFiles('feeds.conf.default') }}-v2
+          key: immortalwrt-toolchain-amd64-${{ hashFiles('feeds.conf.default') }}-v3
 
       - name: Lưu Download Cache
         if: always()
         uses: actions/cache/save@v4
         with:
           path: dl
-          key: immortalwrt-dl-amd64-${{ hashFiles('feeds.conf.default') }}-v2-${{ github.run_id }}
+          key: immortalwrt-dl-amd64-${{ hashFiles('feeds.conf.default') }}-v3-${{ github.run_id }}
