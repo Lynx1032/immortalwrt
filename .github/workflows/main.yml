@@ -62,6 +62,8 @@ jobs:
           make defconfig
           make download -j8 V=s
 
+          make package/boot/uboot-mediatek/compile -j$(nproc) V=s
+
           # Build toàn bộ firmware (Tự động build host tools -> tools -> u-boot -> target)
           make -j$(nproc) V=s || make -j1 V=s
 
