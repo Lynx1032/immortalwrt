@@ -35,3 +35,5 @@ git-src
 .cproject
 .ccache
 .vscode*
+build-fw.sh
+clean.sh
