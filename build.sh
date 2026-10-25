@@ -33,3 +33,10 @@ make package/boot/uboot-mediatek/compile -j$(nproc) V=s
 
 echo "Building firmware..."
 make -j$(nproc) V=s || make -j1 V=s
+
+echo "cleaning..."
+make distclean
+cd ./package
+rm -rf ./luci-app-aurora-config/
+rm -rf ./luci-theme-aurora/
+cd ..
