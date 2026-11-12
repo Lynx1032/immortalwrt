@@ -40,3 +40,4 @@ build-fw.sh
 clean.sh
 update_config.sh
 viettel.config.old
+build_local.sh
